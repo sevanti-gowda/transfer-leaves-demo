@@ -42,6 +42,8 @@ public class EmployeeLeaves {
 	public void setLeavesBalance(Integer leavesBalance) {
 		this.leavesBalance = leavesBalance;
 	}
+
+	
 	
 
 }

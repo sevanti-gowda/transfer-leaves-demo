@@ -30,7 +30,8 @@ public class EmployeeLeavesService {
 	
 	public EmployeeLeavesDTO getEmployeeLeaves(Integer empId) {
 		EmployeeLeaves empLeaves = empRepo.findById(empId).get();
-		return null;
+		
+		return new EmployeeLeavesDTO(empLeaves.getEmployeeId(),empLeaves.getEmployeeName(),empLeaves.getLeavesBalance());
 	}
 	
 	
